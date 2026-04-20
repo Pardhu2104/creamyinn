@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Cream More social card">
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff2e5" />
+      <stop offset="52%" stop-color="#fff9f4" />
+      <stop offset="100%" stop-color="#ffece3" />
+    </linearGradient>
+    <linearGradient id="blobOne" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffb387" />
+      <stop offset="100%" stop-color="#ff6d7a" />
+    </linearGradient>
+    <linearGradient id="blobTwo" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#7ce0d6" />
+      <stop offset="100%" stop-color="#1f9f94" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="40" fill="url(#bg)" />
+  <circle cx="1015" cy="115" r="120" fill="url(#blobOne)" opacity="0.85" />
+  <circle cx="1045" cy="500" r="144" fill="url(#blobTwo)" opacity="0.22" />
+  <circle cx="160" cy="150" r="86" fill="#ffd9b1" opacity="0.72" />
+  <rect x="90" y="92" width="1020" height="446" rx="38" fill="#fffdf9" opacity="0.92" />
+  <rect x="760" y="150" width="250" height="250" rx="40" fill="url(#blobOne)" />
+  <circle cx="885" cy="255" r="76" fill="#fff7f1" opacity="0.92" />
+  <path d="M844 329h82l-31 106a14 14 0 0 1-13 10 14 14 0 0 1-13-10z" fill="#ffcb85" />
+  <text x="160" y="210" fill="#d94b69" font-size="28" font-family="Arial, sans-serif" font-weight="700" letter-spacing="6">
+    CREAMYINN.APP
+  </text>
+  <text x="160" y="304" fill="#241821" font-size="74" font-family="Georgia, serif" font-weight="700">
+    Cream More Ice Cream
+  </text>
+  <text x="160" y="374" fill="#241821" font-size="34" font-family="Arial, sans-serif">
+    Better frontend polish, smoother enquiry flow, and
+  </text>
+  <text x="160" y="418" fill="#241821" font-size="34" font-family="Arial, sans-serif">
+    smarter local-business storytelling for Nellore.
+  </text>
+  <text x="160" y="498" fill="#765c67" font-size="28" font-family="Arial, sans-serif">
+    Family tubs • Sundaes • Dairy picks • Party-order planning
+  </text>
+</svg>

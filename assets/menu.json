@@ -1,0 +1,100 @@
+[
+  {
+    "id": "family-packs",
+    "label": "Family Packs",
+    "items": [
+      {
+        "name": "Vanilla",
+        "price": "₹180",
+        "description": "A dependable 1000 ml family tub for easy sharing, repeat visits, and quick take-home orders.",
+        "note": "1000 ml family pack",
+        "tags": ["Best seller", "Take-home favourite", "Budget friendly"],
+        "statusLabel": "Ready daily",
+        "statusTone": "available",
+        "accent": "sunrise"
+      },
+      {
+        "name": "Butter Scotch",
+        "price": "₹200",
+        "description": "A richer family-pack option for customers who want a more indulgent scoop without overcomplicating the order.",
+        "note": "1000 ml family pack",
+        "tags": ["Popular pick", "Weekend order", "Family share"],
+        "statusLabel": "Ready daily",
+        "statusTone": "available",
+        "accent": "berry"
+      },
+      {
+        "name": "Kaju Kiss Mish",
+        "price": "₹200",
+        "description": "One of the more distinctive family-pack choices, positioned for customers who want something beyond the usual basics.",
+        "note": "1000 ml family pack",
+        "tags": ["Signature flavour", "Premium feel", "Customer favourite"],
+        "statusLabel": "Ready daily",
+        "statusTone": "available",
+        "accent": "cocoa"
+      },
+      {
+        "name": "Mango Double",
+        "price": "Ask us",
+        "description": "A request-based flavour for customers who want something brighter or seasonal without expecting guaranteed stock every day.",
+        "note": "Availability on request",
+        "tags": ["Seasonal mood", "Call to confirm", "Limited stock"],
+        "statusLabel": "Check availability",
+        "statusTone": "limited",
+        "accent": "sunrise"
+      }
+    ]
+  },
+  {
+    "id": "parlour-treats",
+    "label": "Parlour Treats",
+    "items": [
+      {
+        "name": "Couple Sundaes",
+        "price": "₹140+",
+        "description": "An easy dine-in choice for pairs or friends, designed for customers who want an in-store treat instead of only take-home tubs.",
+        "note": "6 varieties",
+        "tags": ["Parlour special", "Good for two", "In-store experience"],
+        "statusLabel": "Available in store",
+        "statusTone": "available",
+        "accent": "berry"
+      },
+      {
+        "name": "Seasonal Specials",
+        "price": "Ask us",
+        "description": "Rotating daily or periodic specials that help the site feel fresh without locking the business into a rigid menu promise.",
+        "note": "Changes through the season",
+        "tags": ["Rotating picks", "Fresh updates", "Ask at counter"],
+        "statusLabel": "Limited run",
+        "statusTone": "limited",
+        "accent": "mint"
+      }
+    ]
+  },
+  {
+    "id": "dairy-and-bulk",
+    "label": "Dairy + Bulk",
+    "items": [
+      {
+        "name": "Fresh Dairy Range",
+        "price": "In-store",
+        "description": "Highlights the broader Sree Rajarajeshwari Dairy Foods offering so the brand feels like more than a single-product parlour.",
+        "note": "Ask at the counter",
+        "tags": ["Daily dairy", "Fresh range", "Store-led selection"],
+        "statusLabel": "Counter update",
+        "statusTone": "limited",
+        "accent": "mint"
+      },
+      {
+        "name": "Party and Office Orders",
+        "price": "Custom quote",
+        "description": "For birthdays, team treats, and gathering orders where the right combination matters more than a standard checkout page.",
+        "note": "Best via planner or WhatsApp",
+        "tags": ["Bulk planning", "Budget support", "Guest count based"],
+        "statusLabel": "Quote required",
+        "statusTone": "quote",
+        "accent": "cocoa"
+      }
+    ]
+  }
+]
