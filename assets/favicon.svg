@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Cream More icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Creamy Inn icon">
   <defs>
     <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffb387" />
-      <stop offset="52%" stop-color="#ff6d7a" />
-      <stop offset="100%" stop-color="#ff8c4d" />
+      <stop offset="0%" stop-color="#E63946" />
+      <stop offset="52%" stop-color="#FF6B35" />
+      <stop offset="100%" stop-color="#FFD166" />
     </linearGradient>
     <linearGradient id="cone" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffd18c" />
-      <stop offset="100%" stop-color="#ff9856" />
+      <stop offset="0%" stop-color="#FFD166" />
+      <stop offset="100%" stop-color="#FF6B35" />
     </linearGradient>
   </defs>
   <rect width="128" height="128" rx="34" fill="url(#bg)" />

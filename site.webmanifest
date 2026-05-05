@@ -1,11 +1,11 @@
 {
-  "name": "Cream More Ice Cream",
-  "short_name": "Cream More",
-  "description": "Cream More Ice Cream in Nellore: family tubs, parlour treats, and quick order planning.",
+  "name": "Creamy Inn",
+  "short_name": "Creamy Inn",
+  "description": "Creamy Inn in Nellore: ice cream, snacks, dine-in, takeaway, and quick order planning.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fff8f2",
-  "theme_color": "#ff8552",
+  "background_color": "#FFF8F0",
+  "theme_color": "#E63946",
   "icons": [
     {
       "src": "/assets/favicon.svg",
