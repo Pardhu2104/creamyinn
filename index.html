@@ -241,52 +241,347 @@
       </article>
     </section>
 
-    <section class="section shell menu-section" id="menu">
-      <div class="section-head reveal">
-        <p class="eyebrow">Menu explorer</p>
-        <h2>Signature tubs, sundaes, dairy picks, and party-order starters.</h2>
-        <p>
-          The menu now lives in structured content instead of hard-coded cards, so pricing and availability are easier to refresh later.
-          Seasonal items and dairy availability are best confirmed by phone or WhatsApp.
-        </p>
+    <section class="menu-section" id="menu" aria-label="Menu">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Menu</span>
+        <h2>Explore our full menu</h2>
+        <p>Tap a category to browse sundaes, scoops, shakes, mocktails, pizza, burgers, Chinese, starters, and snacks.</p>
       </div>
 
-      <div class="menu-toolbar reveal">
-        <div class="chip-list" id="menu-filters" aria-label="Filter menu categories"></div>
-        <p class="menu-toolbar-note">Exact availability can change through the day. Message the store for the fastest confirmation.</p>
+      <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+        <button class="menu-tab active" type="button" role="tab" aria-selected="true" data-category="sundaes">Sundaes</button>
+        <button class="menu-tab" type="button" role="tab" aria-selected="false" data-category="scoops">Scoops</button>
+        <button class="menu-tab" type="button" role="tab" aria-selected="false" data-category="shakes">Milkshakes</button>
+        <button class="menu-tab" type="button" role="tab" aria-selected="false" data-category="mocktails">Mocktails</button>
+        <button class="menu-tab" type="button" role="tab" aria-selected="false" data-category="pizza">Pizza</button>
+        <button class="menu-tab" type="button" role="tab" aria-selected="false" data-category="burgers">Burgers &amp; Sandwiches</button>
+        <button class="menu-tab" type="button" role="tab" aria-selected="false" data-category="chinese">Chinese</button>
+        <button class="menu-tab" type="button" role="tab" aria-selected="false" data-category="starters">Starters</button>
+        <button class="menu-tab" type="button" role="tab" aria-selected="false" data-category="snacks">Snacks</button>
       </div>
 
-      <div class="menu-layout">
-        <div class="menu-grid" id="menu-grid" aria-live="polite">
-          <p class="loading-copy">Loading the latest menu layout...</p>
+      <div class="menu-panels">
+        <div class="menu-panel active" data-panel="sundaes" role="tabpanel">
+          <h3 class="menu-category-title">Single Sundaes</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card">
+              <div class="menu-item-emoji" aria-hidden="true">🍨</div>
+              <div class="menu-item-info">
+                <p class="menu-item-name">Butter Crunchy</p>
+                <p class="menu-item-desc">Butterscotch ice cream with kaju, nuts and sauces</p>
+              </div>
+              <div class="menu-item-price">₹130</div>
+            </article>
+            <article class="menu-item-card">
+              <div class="menu-item-emoji" aria-hidden="true">🍨</div>
+              <div class="menu-item-info">
+                <p class="menu-item-name">Caramel Hero</p>
+                <p class="menu-item-desc">Caramel nuts ice cream with badam, nuts and sauces</p>
+              </div>
+              <div class="menu-item-price">₹130</div>
+            </article>
+            <article class="menu-item-card">
+              <div class="menu-item-emoji" aria-hidden="true">🍨</div>
+              <div class="menu-item-info">
+                <p class="menu-item-name">Jelly Belly</p>
+                <p class="menu-item-desc">Classic American dry fruit ice cream with jelly and nuts sauces</p>
+              </div>
+              <div class="menu-item-price">₹130</div>
+            </article>
+            <article class="menu-item-card">
+              <div class="menu-item-emoji" aria-hidden="true">🍨</div>
+              <div class="menu-item-info">
+                <p class="menu-item-name">Dry Fruit Festival</p>
+                <p class="menu-item-desc">A combination of dry fruits delite ice cream topping with badam nuts and sauces</p>
+              </div>
+              <div class="menu-item-price">₹130</div>
+            </article>
+            <article class="menu-item-card">
+              <div class="menu-item-emoji" aria-hidden="true">🍨</div>
+              <div class="menu-item-info">
+                <p class="menu-item-name">Choco Wonder</p>
+                <p class="menu-item-desc">A combination of choco delite ice cream with chocochips and nuts sauces</p>
+              </div>
+              <div class="menu-item-price">₹130</div>
+            </article>
+          </div>
+
+          <h3 class="menu-category-title">Double Sundaes</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card">
+              <div class="menu-item-emoji" aria-hidden="true">🍧</div>
+              <div class="menu-item-info">
+                <p class="menu-item-name">Sweet Twist</p>
+                <p class="menu-item-desc">2 scoops: combination of kaju katti, gulab jamun flavours topped with kaju and badam sauces</p>
+              </div>
+              <div class="menu-item-price">₹160</div>
+            </article>
+            <article class="menu-item-card">
+              <div class="menu-item-emoji" aria-hidden="true">🍧</div>
+              <div class="menu-item-info">
+                <p class="menu-item-name">Dry Fruit Delica</p>
+                <p class="menu-item-desc">Ice cream topping with kaju, badam, Sauces and nuts</p>
+              </div>
+              <div class="menu-item-price">₹160</div>
+            </article>
+            <article class="menu-item-card">
+              <div class="menu-item-emoji" aria-hidden="true">🍧</div>
+              <div class="menu-item-info">
+                <p class="menu-item-name">Choco Feast</p>
+                <p class="menu-item-desc">2 scoops: combination of choco brownie, black forest ice cream topping with kaju and choco chips sauces</p>
+              </div>
+              <div class="menu-item-price">₹160</div>
+            </article>
+          </div>
+
+          <h3 class="menu-category-title">Natural Ice Creams</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card">
+              <div class="menu-item-emoji" aria-hidden="true">🍦</div>
+              <div class="menu-item-info">
+                <p class="menu-item-name">Sitaphal (Custard Apple)</p>
+              </div>
+              <div class="menu-item-price">₹90</div>
+            </article>
+            <article class="menu-item-card">
+              <div class="menu-item-emoji" aria-hidden="true">🍦</div>
+              <div class="menu-item-info">
+                <p class="menu-item-name">Chickoo (Sapota)</p>
+              </div>
+              <div class="menu-item-price">₹90</div>
+            </article>
+          </div>
+
+          <h3 class="menu-category-title">Special Sundae (3 Scoops)</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card">
+              <div class="menu-item-emoji" aria-hidden="true">🥄</div>
+              <div class="menu-item-info">
+                <p class="menu-item-name">Dry Fruit Cocktails</p>
+              </div>
+              <div class="menu-item-price">₹220</div>
+            </article>
+            <article class="menu-item-card">
+              <div class="menu-item-emoji" aria-hidden="true">🥄</div>
+              <div class="menu-item-info">
+                <p class="menu-item-name">Creamy Inn Gudbud</p>
+                <p class="menu-item-desc">House Special</p>
+              </div>
+              <div class="menu-item-price">₹240</div>
+            </article>
+            <article class="menu-item-card">
+              <div class="menu-item-emoji" aria-hidden="true">🥄</div>
+              <div class="menu-item-info">
+                <p class="menu-item-name">Brownie Fudge</p>
+              </div>
+              <div class="menu-item-price">₹190</div>
+            </article>
+            <article class="menu-item-card">
+              <div class="menu-item-emoji" aria-hidden="true">🥄</div>
+              <div class="menu-item-info">
+                <p class="menu-item-name">Red Velvet Sundae</p>
+              </div>
+              <div class="menu-item-price">₹190</div>
+            </article>
+            <article class="menu-item-card">
+              <div class="menu-item-emoji" aria-hidden="true">🥄</div>
+              <div class="menu-item-info">
+                <p class="menu-item-name">Choco Lava Delite</p>
+              </div>
+              <div class="menu-item-price">₹190</div>
+            </article>
+            <article class="menu-item-card">
+              <div class="menu-item-emoji" aria-hidden="true">🥄</div>
+              <div class="menu-item-info">
+                <p class="menu-item-name">Fruit Dhilkush</p>
+              </div>
+              <div class="menu-item-price">₹220</div>
+            </article>
+            <article class="menu-item-card">
+              <div class="menu-item-emoji" aria-hidden="true">👑</div>
+              <div class="menu-item-info">
+                <p class="menu-item-name">Creamy Inn Special <span class="badge-bestseller">Bestseller</span></p>
+                <p class="menu-item-desc">Signature 5-scoop creation</p>
+              </div>
+              <div class="menu-item-price">₹270</div>
+            </article>
+          </div>
         </div>
 
-        <aside class="menu-aside reveal">
-          <article class="aside-card">
-            <p class="mini-label">Quick picks</p>
-            <h3>Need a fast recommendation?</h3>
-            <ul class="bullet-list">
-              <li>Family movie night: Vanilla + Butter Scotch tubs</li>
-              <li>Weekend visit: Couple Sundaes and a seasonal special</li>
-              <li>Office treat run: multiple family packs with a custom quote</li>
-            </ul>
-          </article>
-
-          <article class="aside-card accent-card">
-            <p class="mini-label">Party orders</p>
-            <h3>Planning for a group?</h3>
-            <p>Share your headcount, budget, and pickup timing. The site will turn that into a ready-to-send message for WhatsApp or email.</p>
-            <a class="button button-light" href="#plan">Open the planner</a>
-          </article>
-        </aside>
-      </div>
-
-      <noscript>
-        <div class="noscript-menu">
-          <strong>Current website menu highlights:</strong>
-          Vanilla family pack ₹180, Butter Scotch ₹200, Kaju Kiss Mish ₹200, Couple Sundaes from ₹140, plus rotating seasonal specials.
+        <div class="menu-panel" data-panel="scoops" role="tabpanel">
+          <h3 class="menu-category-title">Ice Cream Scoops</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Vanilla</p></div><div class="menu-item-price">₹60</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Strawberry</p></div><div class="menu-item-price">₹60</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Mango</p></div><div class="menu-item-price">₹70</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Butterscotch</p></div><div class="menu-item-price">₹70</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Pineapple</p></div><div class="menu-item-price">₹70</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Green Pista</p></div><div class="menu-item-price">₹70</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Chocolate</p></div><div class="menu-item-price">₹70</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Caramel Nuts</p></div><div class="menu-item-price">₹70</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Kaju Katti</p></div><div class="menu-item-price">₹80</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">American Dry Fruit</p></div><div class="menu-item-price">₹80</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Taj Mahal</p></div><div class="menu-item-price">₹80</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Dry Fruit Delite</p></div><div class="menu-item-price">₹80</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Anjeer Badam</p></div><div class="menu-item-price">₹80</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Red Velvet</p></div><div class="menu-item-price">₹80</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Black Currant</p></div><div class="menu-item-price">₹80</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Chappan Bhog</p></div><div class="menu-item-price">₹80</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Gulab Jamun</p></div><div class="menu-item-price">₹80</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Black Forest</p></div><div class="menu-item-price">₹80</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Nutty Chocolate</p></div><div class="menu-item-price">₹80</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Choco Brownie</p></div><div class="menu-item-price">₹80</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍦</div><div class="menu-item-info"><p class="menu-item-name">Cookies 'n Cream</p></div><div class="menu-item-price">₹80</div></article>
+          </div>
         </div>
-      </noscript>
+
+        <div class="menu-panel" data-panel="shakes" role="tabpanel">
+          <h3 class="menu-category-title">Milkshakes</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥤</div><div class="menu-item-info"><p class="menu-item-name">Wonder Vanilla Shake</p></div><div class="menu-item-price">₹120</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥤</div><div class="menu-item-info"><p class="menu-item-name">Kaju Butterscotch Shake</p></div><div class="menu-item-price">₹140</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥤</div><div class="menu-item-info"><p class="menu-item-name">Choco Chips Cookies Shake</p></div><div class="menu-item-price">₹140</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥤</div><div class="menu-item-info"><p class="menu-item-name">Red Velvet Cake Shake</p></div><div class="menu-item-price">₹140</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥤</div><div class="menu-item-info"><p class="menu-item-name">Mango Shake</p></div><div class="menu-item-price">₹140</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥤</div><div class="menu-item-info"><p class="menu-item-name">Strawberry Shake</p></div><div class="menu-item-price">₹140</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥤</div><div class="menu-item-info"><p class="menu-item-name">Black Currant Shake</p></div><div class="menu-item-price">₹150</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥤</div><div class="menu-item-info"><p class="menu-item-name">Dates Dry Fruit Shake</p></div><div class="menu-item-price">₹150</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥤</div><div class="menu-item-info"><p class="menu-item-name">Cold Coffee with Vanilla</p></div><div class="menu-item-price">₹150</div></article>
+          </div>
+
+          <h3 class="menu-category-title">Soda Pops</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🫧</div><div class="menu-item-info"><p class="menu-item-name">Blue World (Blue Curacao flavour)</p></div><div class="menu-item-price">₹120</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🫧</div><div class="menu-item-info"><p class="menu-item-name">Pink Berry (Strawberry flavour)</p></div><div class="menu-item-price">₹120</div></article>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="mocktails" role="tabpanel">
+          <h3 class="menu-category-title">Mocktails</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍹</div><div class="menu-item-info"><p class="menu-item-name">Pina Passion</p><p class="menu-item-desc">Pina Colada</p></div><div class="menu-item-price">₹140</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍹</div><div class="menu-item-info"><p class="menu-item-name">Classic</p><p class="menu-item-desc">Mojito style</p></div><div class="menu-item-price">₹140</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍹</div><div class="menu-item-info"><p class="menu-item-name">Blue Angel</p><p class="menu-item-desc">Blue Curacao</p></div><div class="menu-item-price">₹140</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥭</div><div class="menu-item-info"><p class="menu-item-name">Spicy Mango</p></div><div class="menu-item-price">₹140</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍈</div><div class="menu-item-info"><p class="menu-item-name">Chilly Guava</p></div><div class="menu-item-price">₹140</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥒</div><div class="menu-item-info"><p class="menu-item-name">Cucumber Lime</p></div><div class="menu-item-price">₹140</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍏</div><div class="menu-item-info"><p class="menu-item-name">Green Apple</p></div><div class="menu-item-price">₹140</div></article>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="pizza" role="tabpanel">
+          <h3 class="menu-category-title">Pizza</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍕</div><div class="menu-item-info"><p class="menu-item-name">Veg Cheese Pizza</p></div><div class="menu-item-price">₹200</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍕</div><div class="menu-item-info"><p class="menu-item-name">Plain Cheese Pizza</p></div><div class="menu-item-price">₹200</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍕</div><div class="menu-item-info"><p class="menu-item-name">Tomato Cheese Pizza</p></div><div class="menu-item-price">₹220</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍕</div><div class="menu-item-info"><p class="menu-item-name">Paneer Corn Pizza</p></div><div class="menu-item-price">₹240</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍕</div><div class="menu-item-info"><p class="menu-item-name">Mushroom Capsicum Pizza</p></div><div class="menu-item-price">₹240</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍕</div><div class="menu-item-info"><p class="menu-item-name">Chilly Spicy Pizza</p></div><div class="menu-item-price">₹240</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍕</div><div class="menu-item-info"><p class="menu-item-name">Chicken Pizza <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹250</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍕</div><div class="menu-item-info"><p class="menu-item-name">Spicy Chicken Pizza <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹280</div></article>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="burgers" role="tabpanel">
+          <h3 class="menu-category-title">Burgers</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍔</div><div class="menu-item-info"><p class="menu-item-name">Veg Cheese Burger</p></div><div class="menu-item-price">₹120</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍔</div><div class="menu-item-info"><p class="menu-item-name">Paneer Cheese Burger</p></div><div class="menu-item-price">₹140</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍔</div><div class="menu-item-info"><p class="menu-item-name">Chicken Cheese Burger <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹150</div></article>
+          </div>
+
+          <h3 class="menu-category-title">Sandwiches</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥪</div><div class="menu-item-info"><p class="menu-item-name">Veg Cheese Sandwich</p></div><div class="menu-item-price">₹120</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥪</div><div class="menu-item-info"><p class="menu-item-name">Sweet Corn Sandwich</p></div><div class="menu-item-price">₹130</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥪</div><div class="menu-item-info"><p class="menu-item-name">Paneer Cheese Sandwich</p></div><div class="menu-item-price">₹130</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥪</div><div class="menu-item-info"><p class="menu-item-name">Chicken Sandwich <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹140</div></article>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="chinese" role="tabpanel">
+          <h3 class="menu-category-title">Veg Rice Items</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍚</div><div class="menu-item-info"><p class="menu-item-name">Veg Fried Rice</p></div><div class="menu-item-price">₹180</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍚</div><div class="menu-item-info"><p class="menu-item-name">Gobi Fried Rice</p></div><div class="menu-item-price">₹200</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍚</div><div class="menu-item-info"><p class="menu-item-name">Mix Veg Fried Rice</p></div><div class="menu-item-price">₹240</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍚</div><div class="menu-item-info"><p class="menu-item-name">Mushroom Fried Rice</p></div><div class="menu-item-price">₹240</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍚</div><div class="menu-item-info"><p class="menu-item-name">Veg Schezwan Fried Rice</p></div><div class="menu-item-price">₹220</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍚</div><div class="menu-item-info"><p class="menu-item-name">Veg Jeera Fried Rice</p></div><div class="menu-item-price">₹220</div></article>
+          </div>
+
+          <h3 class="menu-category-title">Non-Veg Rice Items</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍳</div><div class="menu-item-info"><p class="menu-item-name">Egg Fried Rice <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹200</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍗</div><div class="menu-item-info"><p class="menu-item-name">Chicken Fried Rice <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹240</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍗</div><div class="menu-item-info"><p class="menu-item-name">Chicken Schezwan Fried Rice <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹260</div></article>
+          </div>
+
+          <h3 class="menu-category-title">Veg Noodles</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍜</div><div class="menu-item-info"><p class="menu-item-name">Veg Noodle</p></div><div class="menu-item-price">₹180</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍜</div><div class="menu-item-info"><p class="menu-item-name">Gobi Noodle</p></div><div class="menu-item-price">₹200</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍜</div><div class="menu-item-info"><p class="menu-item-name">Veg Schezwan Noodle</p></div><div class="menu-item-price">₹220</div></article>
+          </div>
+
+          <h3 class="menu-category-title">Chicken Noodles</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍳</div><div class="menu-item-info"><p class="menu-item-name">Egg Noodle <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹200</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍗</div><div class="menu-item-info"><p class="menu-item-name">Chicken Noodle <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹240</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍗</div><div class="menu-item-info"><p class="menu-item-name">Chicken Schezwan Noodle <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹260</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍗</div><div class="menu-item-info"><p class="menu-item-name">Chicken Shanghai Noodles <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹290</div></article>
+          </div>
+
+          <h3 class="menu-category-title">Soups (Veg)</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥣</div><div class="menu-item-info"><p class="menu-item-name">Tomato Soup</p></div><div class="menu-item-price">₹120</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥣</div><div class="menu-item-info"><p class="menu-item-name">Sweet Corn Soup</p></div><div class="menu-item-price">₹150</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥣</div><div class="menu-item-info"><p class="menu-item-name">Hot and Sour Soup</p></div><div class="menu-item-price">₹160</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥣</div><div class="menu-item-info"><p class="menu-item-name">Veg Manchow Soup</p></div><div class="menu-item-price">₹160</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥣</div><div class="menu-item-info"><p class="menu-item-name">Veg Clear Soup</p></div><div class="menu-item-price">₹150</div></article>
+          </div>
+
+          <h3 class="menu-category-title">Soups (Non-Veg)</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍗</div><div class="menu-item-info"><p class="menu-item-name">Chicken Soup <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹170</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍗</div><div class="menu-item-info"><p class="menu-item-name">Chicken Hot and Sour Soup <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹180</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍗</div><div class="menu-item-info"><p class="menu-item-name">Chicken Manchow Soup <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹190</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍗</div><div class="menu-item-info"><p class="menu-item-name">Chicken Lemon Coriander Soup <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹190</div></article>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="starters" role="tabpanel">
+          <h3 class="menu-category-title">Veg Starters</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥗</div><div class="menu-item-info"><p class="menu-item-name">Veg Manchurian</p></div><div class="menu-item-price">₹200</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🥗</div><div class="menu-item-info"><p class="menu-item-name">Gobi Manchurian</p></div><div class="menu-item-price">₹200</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🌽</div><div class="menu-item-info"><p class="menu-item-name">Crispy Corn</p></div><div class="menu-item-price">₹240</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🧀</div><div class="menu-item-info"><p class="menu-item-name">Chilly Paneer</p></div><div class="menu-item-price">₹240</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍄</div><div class="menu-item-info"><p class="menu-item-name">Pepper Mushroom</p></div><div class="menu-item-price">₹240</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🌽</div><div class="menu-item-info"><p class="menu-item-name">Crispy Baby Corn</p></div><div class="menu-item-price">₹240</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🧀</div><div class="menu-item-info"><p class="menu-item-name">Paneer Majestic</p></div><div class="menu-item-price">₹240</div></article>
+          </div>
+
+          <h3 class="menu-category-title">Non-Veg Starters</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍗</div><div class="menu-item-info"><p class="menu-item-name">Chilly Chicken <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹290</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍗</div><div class="menu-item-info"><p class="menu-item-name">Chicken 65 <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹290</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍗</div><div class="menu-item-info"><p class="menu-item-name">Chicken Lollypop (7 pcs) <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹300</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍗</div><div class="menu-item-info"><p class="menu-item-name">Dragon Chicken <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹300</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍗</div><div class="menu-item-info"><p class="menu-item-name">Tiger Chicken Bone <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹300</div></article>
+          </div>
+        </div>
+
+        <div class="menu-panel" data-panel="snacks" role="tabpanel">
+          <h3 class="menu-category-title">Snacks</h3>
+          <div class="menu-items-grid">
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🌽</div><div class="menu-item-info"><p class="menu-item-name">Cheese Corn Nuggets</p></div><div class="menu-item-price">₹190</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🧀</div><div class="menu-item-info"><p class="menu-item-name">Paneer Fingers</p></div><div class="menu-item-price">₹190</div></article>
+            <article class="menu-item-card"><div class="menu-item-emoji" aria-hidden="true">🍗</div><div class="menu-item-info"><p class="menu-item-name">Chicken Bites <span class="badge-nonveg">Non-veg</span></p></div><div class="menu-item-price">₹220</div></article>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section shell planner-section" id="plan">
