@@ -104,20 +104,42 @@ function setCurrentYear() {
 }
 
 function initRevealObserver() {
-  const nodes = document.querySelectorAll(".reveal");
+  const nodes = document.querySelectorAll(
+    '.reveal, .branch-card, .menu-item-card, .showcase-item, .stat, .footer-links, [class*="feature-box"]'
+  );
+
+  if (!nodes.length) {
+    return;
+  }
+
+  const prefersReducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
+
+  if (prefersReducedMotion) {
+    nodes.forEach((node) => {
+      node.classList.add("revealed", "is-visible");
+    });
+    return;
+  }
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
+          entry.target.classList.add("revealed", "is-visible");
           observer.unobserve(entry.target);
         }
       });
     },
-    { threshold: 0.18 }
+    { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
   );
 
-  nodes.forEach((node) => observer.observe(node));
+  nodes.forEach((node, index) => {
+    const delaySeconds = Math.min(index * 0.05, 0.6);
+    node.style.opacity = "0";
+    node.style.transform = "translateY(30px)";
+    node.style.transition = `opacity 0.6s ease ${delaySeconds}s, transform 0.6s ease ${delaySeconds}s`;
+    observer.observe(node);
+  });
 }
 
 function initNavigation() {
@@ -146,31 +168,29 @@ function initNavigation() {
     });
   });
 
-  const sections = navLinkItems
-    .map((link) => {
-      const href = link.getAttribute("href");
-      if (!href || !href.startsWith("#")) {
-        return null;
-      }
+  const sections = document.querySelectorAll("section[id]");
+  const navAnchorLinks = document.querySelectorAll(".navbar-links a");
 
-      return document.querySelector(href);
-    })
-    .filter(Boolean);
+  if (!sections.length || !navAnchorLinks.length) {
+    return;
+  }
 
   const sectionObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        const id = `#${entry.target.id}`;
-        const link = navLinkItems.find((navLink) => navLink.getAttribute("href") === id);
-        if (link) {
-          link.classList.toggle("is-current", entry.isIntersecting);
+        if (!entry.isIntersecting) {
+          return;
         }
+
+        navAnchorLinks.forEach((link) => {
+          link.classList.remove("active", "is-current");
+          if (link.getAttribute("href") === `#${entry.target.id}`) {
+            link.classList.add("active", "is-current");
+          }
+        });
       });
     },
-    {
-      rootMargin: "-40% 0px -45% 0px",
-      threshold: 0
-    }
+    { threshold: 0.5 }
   );
 
   sections.forEach((section) => sectionObserver.observe(section));
