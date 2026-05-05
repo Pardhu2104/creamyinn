@@ -21,8 +21,8 @@ const STORE_CONFIG = {
   timezone: "Asia/Kolkata",
   openHour: 9,
   closeHour: 22,
-  phone: "919515767791",
-  email: "info@creammore.in"
+  phone: "919505999927",
+  email: "info@creamyinn.app"
 };
 
 let menuData = [];
@@ -157,7 +157,7 @@ async function loadMenu() {
   } catch (error) {
     menuGrid.innerHTML = `
       <div class="loading-copy">
-        The dynamic menu could not load right now. Please call <a href="tel:+919515767791">095157 67791</a>
+        The dynamic menu could not load right now. Please call <a href="tel:+919505999927">095059 99927</a>
         or use the planner below for the latest availability.
       </div>
     `;
@@ -273,7 +273,7 @@ function getFormValues() {
 
 function buildInquiryMessage(values) {
   const lines = [
-    "Hi Cream More team,",
+    "Hi Creamy Inn team,",
     `My name is ${values.customerName || "a customer browsing creamyinn.app"}.`,
     `I am planning: ${values.orderType}.`,
     `Guest count: ${values.guestCount}.`,
@@ -297,7 +297,7 @@ function updateSummary() {
 
   summaryBlock.textContent = message;
 
-  const emailSubject = encodeURIComponent(`Cream More enquiry from ${values.customerName || "website visitor"}`);
+  const emailSubject = encodeURIComponent(`Creamy Inn enquiry from ${values.customerName || "website visitor"}`);
   const emailBody = encodeURIComponent(message);
   emailLink.href = `mailto:${STORE_CONFIG.email}?subject=${emailSubject}&body=${emailBody}`;
 }
