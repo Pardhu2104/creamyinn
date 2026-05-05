@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Manrope:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&family=Dancing+Script:wght@700&display=swap"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="assets/styles.css" />
@@ -109,77 +109,46 @@
   </header>
 
   <main>
-    <section class="hero shell" id="home">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">creamyinn.app • Ice cream & food parlour • Nellore</p>
-        <h1>Where Every Scoop Tells a Story 🍦</h1>
-        <p class="hero-sub">Nellore's Favourite Ice Cream Destination Since 2018</p>
-        <p class="hero-lead">
-          Creamy Inn is a warm neighbourhood spot for family tubs, parlour treats, fresh dairy picks, and quick celebration orders.
-          Dine-in, takeaway, or delivery — the new site makes it easier to explore the menu, plan a visit, and reach the team in one tap.
+    <section class="hero" id="home">
+      <div class="hero-content shell reveal">
+        <span class="hero-badge">creamyinn.app • Ice cream & food parlour • Nellore</span>
+        <h1>
+          <span class="hero-title-main">Creamy Inn</span>
+          <span class="hero-title-sub">Where every scoop tells a story</span>
+        </h1>
+        <p class="hero-tagline">
+          Family tubs, parlour treats, fresh dairy picks, and quick celebration orders made daily in Vedayapalem.
         </p>
 
-        <div class="hero-actions">
-          <a class="button button-primary" href="#menu">Explore the Menu</a>
-          <a class="button button-secondary" href="#plan">Build a WhatsApp Order</a>
-          <a
-            class="link-arrow"
-            href="https://www.google.com/maps/dir/?api=1&destination=Creamy+Inn+Ice+Cream+Nellore"
-            target="_blank"
-            rel="noopener"
-          >
-            Get directions
-          </a>
+        <div class="hero-stats" aria-label="Store highlights">
+          <div class="stat">
+            <span class="stat-num">2018</span>
+            <span class="stat-label">Since</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">9 AM</span>
+            <span class="stat-label">Open daily</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">100+</span>
+            <span class="stat-label">Flavours</span>
+          </div>
         </div>
 
-        <ul class="trust-strip" aria-label="Store highlights">
-          <li>
-            <strong>Since 2018</strong>
-            <span>Local dairy-crafted joy</span>
-          </li>
-          <li>
-            <strong>Dine-In & Takeaway</strong>
-            <span>Also delivery available</span>
-          </li>
-          <li>
-            <strong>Daily Service</strong>
-            <span>9 AM to 10 PM</span>
-          </li>
-        </ul>
+        <div class="hero-cta-group">
+          <a class="btn-large btn-primary" href="#menu">Explore the Menu</a>
+          <a class="btn-large btn-outline" href="#plan">Plan a WhatsApp Order</a>
+          <a class="btn-large btn-whatsapp" href="https://wa.me/919505999927" target="_blank" rel="noopener">
+            Chat on WhatsApp
+          </a>
+        </div>
       </div>
 
-      <div class="hero-stage reveal">
-        <div class="hero-poster">
-          <div class="poster-orb orb-one" aria-hidden="true"></div>
-          <div class="poster-orb orb-two" aria-hidden="true"></div>
-          <div class="poster-orb orb-three" aria-hidden="true"></div>
-
-          <article class="poster-card poster-main">
-            <p class="mini-label">House favourites</p>
-            <h2>Vanilla, Butter Scotch, Kaju Kiss Mish, and more.</h2>
-            <p>Family tubs for home, sundaes for the parlour, and custom suggestions for birthday and office orders.</p>
-          </article>
-
-          <article class="poster-card poster-tall">
-            <span class="poster-icon" aria-hidden="true">✦</span>
-            <div>
-              <p class="mini-label">For quick decisions</p>
-              <strong>Use the planner to send your order brief on WhatsApp.</strong>
-            </div>
-          </article>
-
-          <article class="poster-card poster-hours" id="hero-hours-card">
-            Today: Checking store hours...
-          </article>
-
-          <article class="poster-card poster-note">
-            <p class="mini-label">Best for</p>
-            <ul class="inline-points">
-              <li>Family nights</li>
-              <li>Kid treats</li>
-              <li>Small celebrations</li>
-            </ul>
-          </article>
+      <div class="hero-ai-panel" aria-hidden="true">
+        <div class="hero-ai-frame">
+          <span class="hero-ai-label">AI image placeholder</span>
+          <strong>Fresh scoop scene</strong>
+          <span>Replace with hero artwork</span>
         </div>
       </div>
     </section>

@@ -65,7 +65,9 @@ function updateStoreStatus() {
 
   storeStatus.textContent = message;
   storeStatus.classList.toggle("is-closed", !isOpen);
-  heroHoursCard.textContent = `Today: ${message}`;
+  if (heroHoursCard) {
+    heroHoursCard.textContent = `Today: ${message}`;
+  }
   storeWindow.textContent = `Today: ${message}`;
 }
 
