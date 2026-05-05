@@ -30,6 +30,28 @@ let activeMenu = "all";
 let activeReview = 0;
 let reviewTimer = null;
 
+function initMenuTabs() {
+  const tabs = Array.from(document.querySelectorAll(".menu-tab"));
+  if (!tabs.length) {
+    return;
+  }
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      tabs.forEach((t) => {
+        t.classList.remove("active");
+        t.setAttribute("aria-selected", "false");
+      });
+
+      document.querySelectorAll(".menu-panel").forEach((panel) => panel.classList.remove("active"));
+      tab.classList.add("active");
+      tab.setAttribute("aria-selected", "true");
+      const panel = document.querySelector(`[data-panel="${tab.dataset.category}"]`);
+      panel?.classList.add("active");
+    });
+  });
+}
+
 function getIndiaTimeParts() {
   const formatter = new Intl.DateTimeFormat("en-GB", {
     timeZone: STORE_CONFIG.timezone,
@@ -147,6 +169,10 @@ function initNavigation() {
 }
 
 async function loadMenu() {
+  if (!menuFilters || !menuGrid) {
+    return;
+  }
+
   try {
     const response = await fetch("assets/menu.json");
     if (!response.ok) {
@@ -487,6 +513,7 @@ function init() {
   initForm();
   initReviews();
   initFaq();
+  initMenuTabs();
   loadMenu();
   registerServiceWorker();
 }
