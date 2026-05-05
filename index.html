@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&family=Dancing+Script:wght@700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&family=Dancing+Script:wght@700&family=Poppins:wght@400;600;700&display=swap"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="assets/styles.css" />
@@ -145,10 +145,12 @@
       </div>
 
       <div class="hero-ai-panel" aria-hidden="true">
-        <div class="hero-ai-frame">
-          <span class="hero-ai-label">AI image placeholder</span>
-          <strong>Fresh scoop scene</strong>
-          <span>Replace with hero artwork</span>
+        <div class="ai-image-block">
+          <div class="img-overlay-text">
+            <span class="img-icon" aria-hidden="true">📸</span>
+            <span class="img-label">AI Food Photo Placeholder</span>
+            <span class="img-prompt">Prompt: ultra-realistic ice cream scoops in a waffle bowl, colorful toppings, studio lighting, shallow depth of field</span>
+          </div>
         </div>
       </div>
     </section>
@@ -166,7 +168,13 @@
         <article class="branch-card branch-card--featured reveal">
           <span class="branch-badge branch-badge--gold">⭐ Flagship</span>
           <div class="branch-image-wrapper">
-            <div class="branch-img-placeholder">🍦</div>
+            <div class="ai-image-block" aria-hidden="true">
+              <div class="img-overlay-text">
+                <span class="img-icon" aria-hidden="true">🍨</span>
+                <span class="img-label">AI Food Photo Placeholder</span>
+                <span class="img-prompt">Prompt: signature sundae close-up with butterscotch drizzle and crunchy nuts, clean background, soft shadows</span>
+              </div>
+            </div>
           </div>
           <div class="branch-info">
             <h3 class="branch-name">Creamy Inn Vedayapalem</h3>
@@ -194,7 +202,13 @@
         <article class="branch-card reveal">
           <span class="branch-badge branch-badge--green">🆕 Opening Soon</span>
           <div class="branch-image-wrapper">
-            <div class="branch-img-placeholder">🍧</div>
+            <div class="ai-image-block" aria-hidden="true">
+              <div class="img-overlay-text">
+                <span class="img-icon" aria-hidden="true">🍧</span>
+                <span class="img-label">AI Food Photo Placeholder</span>
+                <span class="img-prompt">Prompt: chilled falooda in a tall glass with rose syrup layers and ice cream, vibrant colors, condensation, studio lighting</span>
+              </div>
+            </div>
           </div>
           <div class="branch-info">
             <h3 class="branch-name">Creamy Inn Grand</h3>
@@ -239,6 +253,61 @@
         <h2>Smoother conversion flow</h2>
         <p>Visitors can browse, plan a budget, and message the store without jumping around the page.</p>
       </article>
+    </section>
+
+    <section class="showcase-section" id="featured" aria-label="Featured items">
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Featured</span>
+        <h2>Featured favourites</h2>
+        <p>Professional AI placeholders for food photos — swap these blocks with real photography later.</p>
+      </div>
+
+      <div class="showcase-grid">
+        <article class="showcase-item showcase-item--large reveal">
+          <div class="ai-image-block" aria-hidden="true">
+            <div class="img-overlay-text">
+              <span class="img-icon" aria-hidden="true">📸</span>
+              <span class="img-label">AI Food Photo Placeholder</span>
+              <span class="img-prompt">Prompt: premium double-scoop sundae with chocolate sauce, nuts, and wafer stick, moody lighting, 85mm photo, high detail</span>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <h3>Double Sundae Spotlight</h3>
+            <p>A hero visual for the signature double-scoop lineup — coming soon in real photos.</p>
+            <span class="price-tag">₹160</span>
+          </div>
+        </article>
+
+        <article class="showcase-item reveal">
+          <div class="ai-image-block" aria-hidden="true">
+            <div class="img-overlay-text">
+              <span class="img-icon" aria-hidden="true">📸</span>
+              <span class="img-label">AI Food Photo Placeholder</span>
+              <span class="img-prompt">Prompt: thick milkshake in glass jar with whipped cream and sprinkles, pastel background, softbox lighting</span>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <h3>Milkshake Moment</h3>
+            <p>A clean, bright shot built for menus and social shares.</p>
+            <span class="price-tag">₹150</span>
+          </div>
+        </article>
+
+        <article class="showcase-item reveal">
+          <div class="ai-image-block" aria-hidden="true">
+            <div class="img-overlay-text">
+              <span class="img-icon" aria-hidden="true">📸</span>
+              <span class="img-label">AI Food Photo Placeholder</span>
+              <span class="img-prompt">Prompt: crispy golden fries and burger slider combo on a wooden board, warm lighting, shallow depth of field</span>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <h3>Snack Pairing</h3>
+            <p>Perfect for savoury picks — burgers, fries, and comfort snacks.</p>
+            <span class="price-tag">₹220</span>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section class="menu-section" id="menu" aria-label="Menu">

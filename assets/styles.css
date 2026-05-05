@@ -1625,8 +1625,12 @@ iframe {
   overflow: hidden;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 .showcase-item:hover { transform: translateY(-5px); }
+.showcase-item .ai-image-block { border-radius: 0; }
+.showcase-item--large .ai-image-block { min-height: 520px; }
 .showcase-info { padding: 1.25rem; background: white; }
 .showcase-info h3 {
   font-family: "Playfair Display", serif;
