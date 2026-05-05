@@ -3,10 +3,10 @@ const menuGrid = document.getElementById("menu-grid");
 const storeStatus = document.getElementById("store-status");
 const heroHoursCard = document.getElementById("hero-hours-card");
 const storeWindow = document.getElementById("store-window");
-const siteHeader = document.querySelector(".site-header");
-const navToggle = document.querySelector(".nav-toggle");
-const navPanel = document.getElementById("nav-panel");
-const navLinks = Array.from(document.querySelectorAll("[data-nav-link]"));
+const navbar = document.getElementById("navbar");
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.getElementById("navLinks");
+const navLinkItems = Array.from(navLinks?.querySelectorAll("[data-nav-link]") ?? []);
 const testimonialSlider = document.getElementById("testimonial-slider");
 const testimonialCards = Array.from(document.querySelectorAll(".testimonial-card"));
 const testimonialDots = document.getElementById("testimonial-dots");
@@ -85,12 +85,16 @@ function updateStoreStatus() {
   const isOpen = currentMinutes >= openMinutes && currentMinutes < closeMinutes;
   const message = isOpen ? "Open now • closes at 10:00 PM" : "Closed now • opens at 9:00 AM";
 
-  storeStatus.textContent = message;
-  storeStatus.classList.toggle("is-closed", !isOpen);
+  if (storeStatus) {
+    storeStatus.textContent = message;
+    storeStatus.classList.toggle("is-closed", !isOpen);
+  }
   if (heroHoursCard) {
     heroHoursCard.textContent = `Today: ${message}`;
   }
-  storeWindow.textContent = `Today: ${message}`;
+  if (storeWindow) {
+    storeWindow.textContent = `Today: ${message}`;
+  }
 }
 
 function setCurrentYear() {
@@ -117,24 +121,32 @@ function initRevealObserver() {
 }
 
 function initNavigation() {
-  if (!navToggle || !navPanel) {
+  if (navbar) {
+    window.addEventListener("scroll", () => {
+      navbar.classList.toggle("scrolled", window.scrollY > 50);
+    });
+  }
+
+  if (!navToggle || !navLinks) {
     return;
   }
 
+  const setMenuOpen = (nextOpen) => {
+    navLinks.classList.toggle("open", nextOpen);
+    navToggle.setAttribute("aria-expanded", String(nextOpen));
+  };
+
   navToggle.addEventListener("click", () => {
-    const nextExpanded = navToggle.getAttribute("aria-expanded") !== "true";
-    navToggle.setAttribute("aria-expanded", String(nextExpanded));
-    navPanel.classList.toggle("is-open", nextExpanded);
+    setMenuOpen(!navLinks.classList.contains("open"));
   });
 
-  navLinks.forEach((link) => {
+  navLinkItems.forEach((link) => {
     link.addEventListener("click", () => {
-      navToggle.setAttribute("aria-expanded", "false");
-      navPanel.classList.remove("is-open");
+      setMenuOpen(false);
     });
   });
 
-  const sections = navLinks
+  const sections = navLinkItems
     .map((link) => {
       const href = link.getAttribute("href");
       if (!href || !href.startsWith("#")) {
@@ -149,7 +161,7 @@ function initNavigation() {
     (entries) => {
       entries.forEach((entry) => {
         const id = `#${entry.target.id}`;
-        const link = navLinks.find((navLink) => navLink.getAttribute("href") === id);
+        const link = navLinkItems.find((navLink) => navLink.getAttribute("href") === id);
         if (link) {
           link.classList.toggle("is-current", entry.isIntersecting);
         }
@@ -162,10 +174,6 @@ function initNavigation() {
   );
 
   sections.forEach((section) => sectionObserver.observe(section));
-
-  window.addEventListener("scroll", () => {
-    siteHeader.classList.toggle("is-compact", window.scrollY > 24);
-  });
 }
 
 async function loadMenu() {

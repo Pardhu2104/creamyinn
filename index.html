@@ -64,52 +64,47 @@
   </script>
 </head>
 <body>
-  <noscript class="noscript-banner">
-    JavaScript is turned off. You can still call <a href="tel:+919505999927">095059 99927</a> or visit the parlour in Vedayapalem for the latest menu.
-  </noscript>
+	  <noscript class="noscript-banner">
+	    JavaScript is turned off. You can still call <a href="tel:+919505999927">095059 99927</a> or visit the parlour in Vedayapalem for the latest menu.
+	  </noscript>
 
-  <header class="site-header" id="top">
-    <div class="topbar shell">
-      <p>Open daily from 9:00 AM to 10:00 PM in Vedayapalem, Nellore.</p>
-      <div class="topbar-meta">
-        <span class="status-pill" id="store-status">Checking today's service window...</span>
-        <a href="tel:+919505999927">Call 095059 99927</a>
-      </div>
-    </div>
+	  <nav class="navbar" id="navbar" aria-label="Primary">
+	    <div class="navbar-inner">
+	      <a class="navbar-brand" href="#home" aria-label="Creamy Inn home">
+	        <span class="brand-icon" aria-hidden="true">🍦</span>
+	        <span class="brand-text">Creamy Inn</span>
+	      </a>
 
-    <nav class="nav shell" aria-label="Primary">
-      <a class="brand" href="#home" aria-label="Creamy Inn home">
-        <span class="brand-mark" aria-hidden="true"><span></span></span>
-        <span class="brand-copy">
-          <strong>Creamy Inn</strong>
-          <small>Nellore's Favourite Since 2018</small>
-        </span>
-      </a>
+	      <div class="navbar-actions">
+	        <div class="navbar-links" id="navLinks">
+	          <a href="#menu" data-nav-link>Menu</a>
+	          <a href="#about" data-nav-link>About</a>
+	          <a href="#reviews" data-nav-link>Reviews</a>
+	          <a href="#faq" data-nav-link>FAQ</a>
+	          <a href="#visit" data-nav-link>Visit</a>
+	          <a href="#plan" data-nav-link>Plan</a>
+	        </div>
 
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-expanded="false"
-        aria-controls="nav-panel"
-        aria-label="Open navigation"
-      >
-        <span></span>
-        <span></span>
-      </button>
+	        <a class="btn-nav-whatsapp" href="https://wa.me/919505999927" target="_blank" rel="noopener">
+	          WhatsApp
+	        </a>
 
-      <div class="nav-panel" id="nav-panel">
-        <a href="#menu" data-nav-link>Menu</a>
-        <a href="#about" data-nav-link>About</a>
-        <a href="#reviews" data-nav-link>Reviews</a>
-        <a href="#faq" data-nav-link>FAQ</a>
-        <a href="#visit" data-nav-link>Visit</a>
-        <a href="#plan" class="button button-primary button-small" data-nav-link>Plan an Order</a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
+	        <button
+	          class="nav-toggle"
+	          id="navToggle"
+	          type="button"
+	          aria-label="Toggle navigation"
+	          aria-controls="navLinks"
+	          aria-expanded="false"
+	        >
+	          ☰
+	        </button>
+	      </div>
+	    </div>
+	  </nav>
+	
+	  <main>
+	    <section class="hero" id="home">
       <div class="hero-content shell reveal">
         <span class="hero-badge">creamyinn.app • Ice cream & food parlour • Nellore</span>
         <h1>
@@ -1018,45 +1013,85 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="shell footer-grid">
-      <div>
-        <p class="mini-label">Creamy Inn</p>
-        <h2>Better frontend polish, clearer business flow, and static-host simplicity.</h2>
-        <p>
-          This refreshed version of creamyinn.app is designed to help a local business feel more premium without losing speed, clarity, or ease of maintenance.
-        </p>
-      </div>
-
-      <div>
-        <p class="footer-heading">Explore</p>
-        <a href="#menu">Menu</a>
-        <a href="#plan">Order planner</a>
-        <a href="#about">About</a>
-        <a href="#reviews">Reviews</a>
-      </div>
-
-      <div>
-        <p class="footer-heading">Contact</p>
-        <a href="tel:+919505999927">095059 99927</a>
-        <a href="mailto:info@creamyinn.app">info@creamyinn.app</a>
-        <a href="https://wa.me/919505999927" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="https://www.google.com/search?q=creamy+inn+nellore" target="_blank" rel="noopener">Google listing</a>
-      </div>
-    </div>
-
-    <div class="shell footer-bottom">
-      <span>© <span data-year></span> Creamy Inn</span>
-      <span>creamyinn.app</span>
-    </div>
-  </footer>
-
-  <div class="mobile-dock" aria-label="Quick contact actions">
-    <a href="tel:+919505999927">Call</a>
-    <a href="https://wa.me/919505999927" target="_blank" rel="noopener">WhatsApp</a>
-    <a href="#plan">Plan</a>
-  </div>
-
-  <script src="assets/app.js" defer></script>
-</body>
-</html>
+	  <footer class="footer">
+	    <div class="footer-main">
+	      <div class="footer-brand">
+	        <div class="footer-logo">Creamy Inn</div>
+	        <p>
+	          Open daily from 9:00 AM to 10:00 PM in Vedayapalem, Nellore. Quick parlour treats, family tubs,
+	          and celebration orders made simple.
+	        </p>
+	        <div class="footer-social" aria-label="Social links">
+	          <a href="https://wa.me/919505999927" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+	          <a href="tel:+919505999927" aria-label="Call">📞</a>
+	          <a
+	            href="https://www.google.com/maps/dir/?api=1&destination=Creamy+Inn+Ice+Cream+Nellore"
+	            target="_blank"
+	            rel="noopener"
+	            aria-label="Directions"
+	          >
+	            📍
+	          </a>
+	        </div>
+	      </div>
+	
+	      <div class="footer-links">
+	        <h4>Explore</h4>
+	        <a href="#menu">Menu</a>
+	        <a href="#plan">Order planner</a>
+	        <a href="#about">About</a>
+	        <a href="#reviews">Reviews</a>
+	        <a href="#visit">Visit</a>
+	      </div>
+	
+	      <div class="footer-branches">
+	        <h4>Branches</h4>
+	        <p>
+	          Vedayapalem (Main)<br />
+	          Plot No. 28-B, Wood Complex near Ayyappa Temple, Mini Bypass Road, Vedayapalem, Nellore.
+	        </p>
+	        <p>
+	          Looking for more locations?<br />
+	          Message us on WhatsApp for updates.
+	        </p>
+	      </div>
+	
+	      <div class="footer-contact">
+	        <h4>Contact</h4>
+	        <a href="tel:+919505999927">Call: 095059 99927</a>
+	        <a href="mailto:info@creamyinn.app">Email: info@creamyinn.app</a>
+	        <a href="https://wa.me/919505999927" target="_blank" rel="noopener">WhatsApp chat</a>
+	        <a href="https://www.google.com/search?q=creamy+inn+nellore" target="_blank" rel="noopener">Google listing</a>
+	      </div>
+	    </div>
+	
+	    <div class="footer-bottom">© <span data-year></span> Creamy Inn • creamyinn.app</div>
+	  </footer>
+	
+	  <nav class="fab-bar" aria-label="Quick actions">
+	    <a class="fab-item" href="tel:+919505999927">
+	      <span class="fab-icon" aria-hidden="true">📞</span>
+	      <span class="fab-label">Call</span>
+	    </a>
+	    <a class="fab-item fab-whatsapp" href="https://wa.me/919505999927" target="_blank" rel="noopener">
+	      <span class="fab-icon" aria-hidden="true">💬</span>
+	      <span class="fab-label">WhatsApp</span>
+	    </a>
+	    <a class="fab-item" href="#plan">
+	      <span class="fab-icon" aria-hidden="true">🧾</span>
+	      <span class="fab-label">Plan</span>
+	    </a>
+	    <a
+	      class="fab-item"
+	      href="https://www.google.com/maps/dir/?api=1&destination=Creamy+Inn+Ice+Cream+Nellore"
+	      target="_blank"
+	      rel="noopener"
+	    >
+	      <span class="fab-icon" aria-hidden="true">📍</span>
+	      <span class="fab-label">Map</span>
+	    </a>
+	  </nav>
+	
+	  <script src="assets/app.js" defer></script>
+	</body>
+	</html>
