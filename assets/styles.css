@@ -201,7 +201,8 @@ iframe {
   margin-bottom: 3rem;
 }
 
-.menu-tab {
+.menu-tab,
+[class*="tab"] {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);
   color: rgba(255, 255, 255, 0.5);
@@ -215,7 +216,8 @@ iframe {
 }
 
 .menu-tab:hover,
-.menu-tab.active {
+.menu-tab.active,
+[class*="tab"].active {
   background: var(--color-primary);
   color: #fff;
   border-color: var(--color-primary);
@@ -1802,8 +1804,8 @@ section {
 .feature-card,
 .menu-card[data-accent],
 [class*="card"] {
-  background: #1A1A1A;
-  border: 1px solid rgba(255,255,255,0.08);
+  background: var(--color-surface2);
+  border: 1px solid var(--color-border);
   border-radius: 20px;
   transition: border-color 0.3s ease, transform 0.3s ease;
 }
@@ -1811,7 +1813,7 @@ section {
 .branch-card:hover,
 .review-card:hover,
 [class*="card"]:hover {
-  border-color: rgba(232,53,42,0.4);
+  border-color: color-mix(in srgb, var(--color-primary) 40%, transparent);
   transform: translateY(-4px);
   box-shadow: 0 20px 50px rgba(0,0,0,0.5);
 }
@@ -1822,26 +1824,6 @@ section {
   color: var(--color-gold);
   font-size: 1.2rem;
   font-weight: 600;
-}
-
-.menu-tab,
-[class*="tab"] {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.08);
-  color: rgba(255,255,255,0.5);
-  border-radius: 100px;
-  padding: 0.55rem 1.25rem;
-  font-size: 0.82rem;
-  cursor: pointer;
-  transition: all 0.25s;
-  font-family: var(--font-body);
-}
-
-.menu-tab.active,
-[class*="tab"].active {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  color: #fff;
 }
 
 .btn-primary,
