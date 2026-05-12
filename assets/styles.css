@@ -105,7 +105,9 @@ img {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  background: linear-gradient(135deg, #E63946 0%, #FF6B35 50%, #FFD166 100%);
+  background: linear-gradient(135deg, #ff6b6b 0%, #feca57 40%, #48dbfb 70%, #5f27cd 100%);
+  background-size: 200% 200%;
+  animation: backgroundShift 12s ease infinite;
   min-height: 250px;
   display: flex;
   align-items: center;
@@ -129,6 +131,7 @@ img {
   text-align: center;
   padding: 1rem;
   font-family: "Poppins", sans-serif;
+  text-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
 }
 
 .ai-image-block .img-overlay-text .img-icon {
@@ -138,9 +141,9 @@ img {
 }
 
 .ai-image-block .img-overlay-text .img-label {
-  font-size: 0.9rem;
-  font-weight: 600;
-  opacity: 0.9;
+  font-size: 1.05rem;
+  font-weight: 700;
+  opacity: 0.95;
 }
 
 .ai-image-block .img-overlay-text .img-prompt {
@@ -1782,3 +1785,31 @@ section {
 .btn-sm.btn-outline { background: transparent; border-color: var(--color-primary); color: var(--color-primary); }
 .btn-sm.btn-whatsapp { background: #25D366; color: white; }
 .btn-sm:hover { transform: translateY(-2px); opacity: 0.9; }
+
+/* ── Branch Maps ── */
+.branches-map-section { padding: 0 2rem 6rem; background: var(--color-surface); }
+.branch-maps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.branch-map-card { display: flex; flex-direction: column; gap: 0.75rem; }
+.branch-map-title {
+  margin: 0;
+  font-weight: 700;
+  color: var(--color-dark);
+  font-size: 1rem;
+}
+.branch-map-frame {
+  width: 100%;
+  height: 240px;
+  border: 0;
+  border-radius: 16px;
+  filter: invert(0.9) hue-rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .branch-maps-grid { grid-template-columns: 1fr; }
+}
