@@ -19,8 +19,8 @@ const presetButtons = Array.from(document.querySelectorAll(".preset-pill"));
 
 const STORE_CONFIG = {
   timezone: "Asia/Kolkata",
-  openHour: 9,
-  closeHour: 22,
+  openHour: 10,
+  closeHour: 23,
   phone: "919505999927",
   email: "info@creamyinn.app"
 };
@@ -83,7 +83,7 @@ function updateStoreStatus() {
   const openMinutes = STORE_CONFIG.openHour * 60;
   const closeMinutes = STORE_CONFIG.closeHour * 60;
   const isOpen = currentMinutes >= openMinutes && currentMinutes < closeMinutes;
-  const message = isOpen ? "Open now • closes at 10:00 PM" : "Closed now • opens at 9:00 AM";
+  const message = isOpen ? "Open now • closes at 11:00 PM" : "Closed now • opens at 10:00 AM";
 
   if (storeStatus) {
     storeStatus.textContent = message;
